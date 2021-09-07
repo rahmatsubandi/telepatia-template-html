@@ -1,0 +1,35 @@
+@import "./fonts";
+.btn-master {
+  padding: 15px 26px 15px 26px;
+  border-radius: 10px;
+  font-weight: map-get($font-weights, semibold);
+  border: 0;
+}
+
+.btn-primary {
+  @extend .btn-master;
+  color: $white;
+  background: $purple;
+  &:hover {
+    background: $purpledark;
+  }
+  &:active,
+  &:focus {
+    background: $purpledark;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(64, 43, 156, 0.404) !important;
+    box-shadow: 0 0 0 0.2rem rgba(64, 43, 156, 0.404) !important;
+  }
+}
+
+.btn-secondary {
+  @extend .btn-master;
+  color: $darpur;
+  background: $sofpur;
+  &:hover {
+    background: $medpur;
+  }
+  &:active,
+  &:focus {
+    background: $medpur;
+  }
+}

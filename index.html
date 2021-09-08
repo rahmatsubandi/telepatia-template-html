@@ -1,111 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.svg"
+      type="image/x-icon"
+    />
+    <title>Telepatia | Network Provider</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon" />
-  <title>Telepatia | Network Provider</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <!-- Carousle -->
+    <link
+      rel="stylesheet"
+      href="./assets/style/owlcarousel/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/style/owlcarousel/owl.theme.default.min.css"
+    />
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
-  <!-- Carousle -->
-  <link rel="stylesheet" href="./assets/style/owlcarousel/owl.carousel.min.css" />
-  <link rel="stylesheet" href="./assets/style/owlcarousel/owl.theme.default.min.css" />
-  <!-- AOS CDN -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style/main.css" type="text/css" />
+  </head>
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/style/main.css" type="text/css" />
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light navbar-tp fixed-top navbar-fixed-top" data-aos="fade-down">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="/assets/images/logo.png" height="45" alt="logo Telepatia" draggable="false" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Stories</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Premium</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section class="sales">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-12" data-aos="fade-down" data-aos-delay="100">
-          <img src="/assets/images/banner.png" class="img-fluid" alt="telepatia service" draggable="false" />
-        </div>
-        <div class="col-lg-6 col-12 copywriting" data-aos="fade-down" data-aos-delay="150">
-          <h1 class="header">
-            Always Connected. <br />
-            No Lagging.
-          </h1>
-          <p class="description" data-aos="fade-down" data-aos-delay="200">
-            There are many variations of passages of <br />
-            Lorem Ipsum available, but the majority have <br />
-            suffered alteration in some form
-          </p>
-          <p class="buttons">
-            <a href="#" class="btn btn-primary me-2" data-aos="fade-right" data-aos-delay="250"> See Pricing </a>
-            <a href="#" class="btn btn-secondary" data-aos="fade-left" data-aos-delay="300"> Testimonials </a>
-          </p>
-        </div>
-      </div>
-      <div class="brands">
-        <div id="owl-carousel" class="owl-carousel" >
-          <div class="item" data-aos="zoom-in" data-aos-delay="100">
-            <img src="/assets/images/brands.png" class="img-fluid brands-logo" alt="apple" draggable="false" />
-          </div>
-          <div class="item" data-aos="zoom-in" data-aos-delay="150">
-            <img src="/assets/images/brands1.png" class="img-fluid brands-logo" alt="adobe" draggable="false" />
-          </div>
-          <div class="item" data-aos="zoom-in" data-aos-delay="200">
-            <img src="/assets/images/brands2.png" class="img-fluid brands-logo" alt="slack" draggable="false" />
-          </div>
-          <div class="item" data-aos="zoom-in" data-aos-delay="250">
-            <img src="/assets/images/brands3.png" class="img-fluid brands-logo" alt="spotify" draggable="false" />
-          </div>
-          <div class="item" data-aos="zoom-in" data-aos-delay="300">
-            <img src="/assets/images/brands4.png" class="img-fluid brands-logo" alt="google" draggable="false" />
-          </div>
+  <body>
+    <nav
+      class="
+        navbar navbar-expand-lg navbar-light navbar-tp
+        fixed-top
+        navbar-fixed-top
+      "
+      data-aos="fade-down"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/assets/images/logo.png"
+            height="45"
+            alt="logo Telepatia"
+            draggable="false"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Stories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Premium</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-  </section>
+    </nav>
 
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-    crossorigin="anonymous"></script>
-  <!-- CDN AOS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- Carousel -->
-  <script src="./assets/js/owlcarousel/jquery.min.js"></script>
-  <script src="./assets/js/owlcarousel/owl.carousel.min.js"></script>
-  <!-- Custom JS -->
-  <script src="./assets/js/index.js"></script>
-</body>
+    <section class="sales">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 col-12"
+            data-aos="fade-down"
+            data-aos-delay="100"
+          >
+            <img
+              src="/assets/images/banner.png"
+              class="img-fluid"
+              alt="telepatia service"
+              draggable="false"
+            />
+          </div>
+          <div
+            class="col-lg-6 col-12 copywriting"
+            data-aos="fade-down"
+            data-aos-delay="150"
+          >
+            <h1 class="header" data-aos="fade-down" data-aos-delay="200">
+              Always Connected. <br />
+              No Lagging.
+            </h1>
+            <p class="description" data-aos="fade-down" data-aos-delay="250">
+              There are many variations of passages of <br />
+              Lorem Ipsum available, but the majority have <br />
+              suffered alteration in some form
+            </p>
+            <p class="buttons">
+              <a
+                href="#"
+                class="btn btn-primary me-2"
+                data-aos="fade-right"
+                data-aos-delay="300"
+              >
+                See Pricing
+              </a>
+              <a
+                href="#"
+                class="btn btn-secondary"
+                data-aos="fade-left"
+                data-aos-delay="350"
+              >
+                Testimonials
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="brands">
+          <div class="row">
+            <div class="col-lg-12 col-12">
+              <div id="owl-carousel" class="owl-carousel">
+                <div class="item" data-aos="zoom-in" data-aos-delay="100">
+                  <img
+                    src="/assets/images/brands.png"
+                    class="img-fluid brands-logo"
+                    alt="apple"
+                    draggable="false"
+                  />
+                </div>
+                <div class="item" data-aos="zoom-in" data-aos-delay="150">
+                  <img
+                    src="/assets/images/brands1.png"
+                    class="img-fluid brands-logo"
+                    alt="adobe"
+                    draggable="false"
+                  />
+                </div>
+                <div class="item" data-aos="zoom-in" data-aos-delay="200">
+                  <img
+                    src="/assets/images/brands2.png"
+                    class="img-fluid brands-logo"
+                    alt="slack"
+                    draggable="false"
+                  />
+                </div>
+                <div class="item" data-aos="zoom-in" data-aos-delay="250">
+                  <img
+                    src="/assets/images/brands3.png"
+                    class="img-fluid brands-logo"
+                    alt="spotify"
+                    draggable="false"
+                  />
+                </div>
+                <div class="item" data-aos="zoom-in" data-aos-delay="300">
+                  <img
+                    src="/assets/images/brands4.png"
+                    class="img-fluid brands-logo"
+                    alt="google"
+                    draggable="false"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-12 text-center">
+            <h1 class="header" data-aos="fade-down" data-aos-delay="200">
+              Easy Budget.
+            </h1>
+            <p class="description" data-aos="fade-down" data-aos-delay="250">
+              There are many variations of <br />
+              Lorem Ipsum available, but the majority
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-7 col-12">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <div
+                  class="master-card basic-card"
+                  data-aos="flip-left"
+                  data-aos-delay="100"
+                >
+                  <h5 class="name">Basic</h5>
+                  <h1 class="price">Rp.500,000</h1>
+                  <p class="support">
+                    Lorem ipsum dolor sit amet consectetur <br />
+                    adipisicing elit. Saepe, cum?
+                  </p>
+                  <div class="item-benefit">
+                    <img
+                      src="./assets/images/ic_check_gray.svg"
+                      alt="icon"
+                      draggable="false"
+                    />
+                    <p>Live Support</p>
+                  </div>
+                  <div class="item-benefit">
+                    <img
+                      src="./assets/images/ic_check_gray.svg"
+                      alt="icon"
+                      draggable="false"
+                    />
+                    <p>10Gbps Speed</p>
+                  </div>
+                  <div class="item-benefit">
+                    <img
+                      src="./assets/images/ic_check_gray.svg"
+                      alt="icon"
+                      draggable="false"
+                    />
+                    <p>Basic Networking</p>
+                    <a
+                      href="#"
+                      class="btn btn-primary me-2"
+                      data-aos="fade-right"
+                      data-aos-delay="350"
+                    >
+                      Start with this
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div
+                  class="master-card most-card"
+                  data-aos="flip-right"
+                  data-aos-delay="250"
+                >
+                  <h5 class="name">Most Popular</h5>
+                  <h1 class="price">Rp.1,100,000</h1>
+                  <p class="support">
+                    Lorem ipsum dolor sit amet consectetur <br />
+                    adipisicing elit. Saepe, cum?
+                  </p>
+                  <div class="item-benefit">
+                    <img
+                      src="./assets/images/ic_check_purple.svg"
+                      alt="icon"
+                      draggable="false"
+                    />
+                    <p>Live Support</p>
+                  </div>
+                  <div class="item-benefit">
+                    <img
+                      src="./assets/images/ic_check_purple.svg"
+                      alt="icon"
+                      draggable="false"
+                    />
+                    <p>Unlimited Speed</p>
+                  </div>
+                  <div class="item-benefit">
+                    <img
+                      src="./assets/images/ic_check_purple.svg"
+                      alt="icon"
+                      draggable="false"
+                    />
+                    <p>Boost Speed</p>
+                  </div>
+                  <div class="item-benefit">
+                    <img
+                      src="./assets/images/ic_check_purple.svg"
+                      alt="icon"
+                      draggable="false"
+                    />
+                    <p>All Basic Features</p>
+                    <a
+                      href="#"
+                      class="btn btn-primary me-2"
+                      data-aos="fade-left"
+                      data-aos-delay="350"
+                    >
+                      Choose this plan
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CDN AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Carousel -->
+    <script src="./assets/js/owlcarousel/jquery.min.js"></script>
+    <script src="./assets/js/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./assets/js/index.js"></script>
+  </body>
 </html>

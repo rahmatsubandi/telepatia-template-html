@@ -1,0 +1,18 @@
+.sales {
+  padding-top: 100px;
+  .copywriting {
+    padding-left: 80px;
+  }
+  .brands {
+    margin-top: 70px;
+    text-align: center;
+    .owl-carousel {
+      .owl-item {
+        img {
+          display: inline-block;
+          width: 115px;
+        }
+      }
+    }
+  }
+}

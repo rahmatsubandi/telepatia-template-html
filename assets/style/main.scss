@@ -1,5 +1,6 @@
 @import "./colors";
 @import "./fonts";
+@import "./navbar";
 @import "./button";
 
 body {
@@ -14,23 +15,6 @@ body {
   }
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.navbar-tp {
-  padding-top: 30px;
-  .navbar-nav {
-    li {
-      padding-left: 50px;
-    }
-    .active {
-      color: $purple !important;
-      font-weight: map-get($font-weights, medium);
-    }
-    .nav-link {
-      color: $navy;
-      font-weight: map-get($font-weights, reguler);
-    }
-  }
 }
 
 .header {
@@ -53,6 +37,19 @@ body {
 .sales {
   padding-top: 50px;
   .copywriting {
-    padding-left: 50px;
+    padding-left: 80px;
+  }
+  .brands {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+    .owl-carousel {
+      .owl-item {
+        img {
+          display: inline-block;
+          width: 115px;
+        }
+      }
+    }
   }
 }

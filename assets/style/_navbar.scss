@@ -1,0 +1,20 @@
+.navbar-tp {
+  padding-top: 30px;
+  .navbar-nav {
+    li {
+      padding-left: 50px;
+    }
+    .active {
+      color: $purple !important;
+      font-weight: map-get($font-weights, medium);
+    }
+    .nav-link {
+      color: $navy;
+      font-weight: map-get($font-weights, reguler);
+    }
+  }
+}
+.navbar-fixed-top.scrolled {
+  background-color: $white;
+  transition: background-color 200ms linear;
+}

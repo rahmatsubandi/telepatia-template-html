@@ -1,5 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap");
+.navbar-tp {
+  padding-top: 30px;
+}
+
+.navbar-tp .navbar-nav li {
+  padding-left: 50px;
+}
+
+.navbar-tp .navbar-nav .active {
+  color: #563ad6 !important;
+  font-weight: 500;
+}
+
+.navbar-tp .navbar-nav .nav-link {
+  color: #02044a;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: #ffffff;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
 .btn-master, .btn-primary, .btn-secondary {
   padding: 15px 26px 15px 26px;
   border-radius: 10px;
@@ -56,23 +79,6 @@ body ::-moz-selection {
   color: #ffffff;
 }
 
-.navbar-tp {
-  padding-top: 30px;
-}
-
-.navbar-tp .navbar-nav li {
-  padding-left: 50px;
-}
-
-.navbar-tp .navbar-nav .active {
-  color: #563ad6 !important;
-  font-weight: 500;
-}
-
-.navbar-tp .navbar-nav .nav-link {
-  color: #02044a;
-}
-
 .header {
   font-weight: 600;
   color: #02044a;
@@ -95,6 +101,17 @@ body ::-moz-selection {
 }
 
 .sales .copywriting {
-  padding-left: 50px;
+  padding-left: 80px;
+}
+
+.sales .brands {
+  margin-top: 70px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.sales .brands .owl-carousel .owl-item img {
+  display: inline-block;
+  width: 115px;
 }
 /*# sourceMappingURL=main.css.map */
